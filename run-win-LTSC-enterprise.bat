@@ -15,7 +15,8 @@ cd /D "%~dp0"
 cd terminal-1.18.1462.0
 echo.
 echo Starting...
-echo You can close THIS Terminal window now, the script should be open inside another new one.
+echo You can close THIS Terminal window now, as
+echo the script should be open inside another new one.
 .\wt.exe wt.exe "C:\Program Files\Git\git-bash.exe" -c "bash ../multicommittr.sh"
 cd /D "%~dp0"
 
