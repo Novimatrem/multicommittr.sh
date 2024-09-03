@@ -2,7 +2,11 @@
 @title multicommittr Launcher (Win LTSC) v39a
 cls
 echo.
-echo Downloading deps for LTSC.
+echo Downloading dependencies...
+echo please wait
+echo.
+echo (if you are prompted to replace a file, type a capital N, and press Enter)
+echo .
 cd /D "%~dp0"
 powershell -Command "(New-Object Net.WebClient).DownloadFile('https://github.com/microsoft/terminal/releases/download/v1.18.1462.0/Microsoft.WindowsTerminalPreview_1.18.1462.0_x64.zip', 'package.zip')"
 powershell -Command "Invoke-WebRequest https://github.com/microsoft/terminal/releases/download/v1.18.1462.0/Microsoft.WindowsTerminalPreview_1.18.1462.0_x64.zip -OutFile package.zip"
