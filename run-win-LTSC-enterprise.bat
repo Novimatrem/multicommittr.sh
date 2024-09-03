@@ -1,4 +1,4 @@
-@echo of
+@echo off
 @title multicommittr Launcher (Win LTSC) v39a
 cls
 echo To run this script on Windows LTSC, uh, good luck
