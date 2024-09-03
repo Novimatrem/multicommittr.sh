@@ -21,10 +21,6 @@ Required dependencies are: Git Bash (https://github.com/git-for-windows/git/rele
 
 ```cd multicommittr.sh```
 
-```cmd "/C run-win-zoey.bat"```
-
-(OR if you are on LTSC, this command instead:)
-
 ```cmd "/C run-win-LTSC-enterprise.bat"```
 
 # how to (linux)
