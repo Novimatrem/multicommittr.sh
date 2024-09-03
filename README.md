@@ -15,7 +15,7 @@ It should require Windows 11 version 23H2 build 22635.4145 or later.
 
 Run the following commands inside of Git Bash in order to download and start the script.
 
-Required dependencies are: Git Bash (https://github.com/git-for-windows/git/releases), and Microsoft's modern 'Windows Terminal' (from the Microsoft Store, unless you are using LTSC, where the script has a launcher to download that Terminal for you.)
+Required dependencies are: Git Bash (https://github.com/git-for-windows/git/releases), and Microsoft's modern 'Windows Terminal' (from the Microsoft Store)
 
 ```git clone https://github.com/Novimatrem/multicommittr.sh```
 
