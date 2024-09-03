@@ -9,6 +9,8 @@ Which then manually gets uploaded every so often to:
 
 # how to (win10)
 
+Windows usage of the script is unsupported by me, I don't use Windows. It may work, it probably won't. I don't test it on Windows. See LICENSE for details.
+
 For Windows, the script is only tested on the latest versions of Windows 11 and probably depends on it.
 
 It should require Windows 11 version 23H2 build 22635.4145 or later.
@@ -25,7 +27,7 @@ Required dependencies are: Git Bash (https://github.com/git-for-windows/git/rele
 
 # how to (linux)
 
-Run the following commands inside of your bash terminal emulator in order to download and start the game.
+Run the following commands inside of your bash terminal emulator in order to download and start the script.
 
 Required dependencies are: Bash, and a Terminal Emulator.
 
