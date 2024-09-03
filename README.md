@@ -27,6 +27,8 @@ Required dependencies are: Git Bash (https://github.com/git-for-windows/git/rele
 
 # how to (linux)
 
+Linux usage of the script is unsupported by me, I don't have your setup. It may work, it probably will, and I do test it on Linux, but your mileage may vary. See LICENSE for details.
+
 Run the following commands inside of your bash terminal emulator in order to download and start the script.
 
 Required dependencies are: Bash, and a Terminal Emulator.
