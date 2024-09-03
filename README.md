@@ -7,6 +7,38 @@ The script to save my ability to code. Ensures all code and all code changes end
 Which then manually gets uploaded every so often to:
 - My USB backup hard drive
 
+# how to (win10)
+
+Game is only tested on the latest versions of Windows 11 and probably depends on it.
+
+It should require Windows 11 version 23H2 build 22635.4145 or later.
+
+Run the following commands inside of Git Bash in order to download and start the script.
+
+Required dependencies are: Git Bash (https://github.com/git-for-windows/git/releases), and Microsoft's modern 'Windows Terminal' (from the Microsoft Store, unless you are using LTSC, where the script has a launcher to download that Terminal for you.)
+
+```git clone https://github.com/Novimatrem/multicommittr.sh```
+
+```cd multicommittr.sh```
+
+```cmd "/C run-win-zoey.bat"```
+
+(OR if you are on LTSC, this command instead:)
+
+```cmd "/C run-win-LTSC-enterprise.bat"```
+
+# how to (linux)
+
+Run the following commands inside of your bash terminal emulator in order to download and start the game.
+
+Required dependencies are: Bash, and a Terminal Emulator.
+
+```git clone https://github.com/Novimatrem/multicommittr.sh```
+
+```cd multicommittr.sh```
+
+```bash multicommittr.sh```
+
 # License (code)
 [![GNU GPLv3 Image](https://www.gnu.org/graphics/gplv3-127x51.png)](http://www.gnu.org/licenses/gpl-3.0.en.html)  
 
