@@ -1,10 +1,7 @@
 @echo off
 @title multicommittr Launcher (Win LTSC) v39a
 cls
-echo To run this script on Windows LTSC, uh, good luck
 echo.
-echo To continue,
-pause
 echo Downloading deps for LTSC.
 cd /D "%~dp0"
 powershell -Command "(New-Object Net.WebClient).DownloadFile('https://github.com/microsoft/terminal/releases/download/v1.18.1462.0/Microsoft.WindowsTerminalPreview_1.18.1462.0_x64.zip', 'package.zip')"
@@ -17,6 +14,5 @@ cd terminal-1.18.1462.0
 cd /D "%~dp0"
 
 REM EOF
-pause
 :eof
 exit
