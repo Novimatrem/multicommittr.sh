@@ -9,7 +9,7 @@ Which then manually gets uploaded every so often to:
 
 # how to (win10)
 
-Game is only tested on the latest versions of Windows 11 and probably depends on it.
+For Windows, the script is only tested on the latest versions of Windows 11 and probably depends on it.
 
 It should require Windows 11 version 23H2 build 22635.4145 or later.
 
