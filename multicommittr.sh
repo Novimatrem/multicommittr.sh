@@ -23,8 +23,11 @@ cd Working
 echo "Pulling repos from GitLab..."
 mkdir GitLab
 cd GitLab
+echo "zrepos repo is too heavy, we don't back up"
+echo "only-working-amd-gpu-driver repo is too heavy, we don't back up"
+echo ""
 git clone https://gitlab.com/Novimatrem/znippets
-git clone https://gitlab.com/Novimatrem/zrepos
+#git clone https://gitlab.com/Novimatrem/zrepos
 git clone https://gitlab.com/Novimatrem/my-awesomewm-mods
 git clone https://gitlab.com/Novimatrem/novimatrem.gitlab.io
 git clone https://gitlab.com/Novimatrem/social
@@ -53,7 +56,7 @@ git clone https://gitlab.com/Novimatrem/limit-pulseaudio-max-volume-to-100-perce
 git clone https://gitlab.com/Novimatrem/warning-sound-if-volume-is-100-percent
 git clone https://gitlab.com/Novimatrem/ff14-download-timing-script
 git clone https://gitlab.com/Novimatrem/dnd-dungeon-layout-map-maker
-git clone https://gitlab.com/Novimatrem/only-working-amd-gpu-driver
+#git clone https://gitlab.com/Novimatrem/only-working-amd-gpu-driver
 git clone https://gitlab.com/Novimatrem/fedora-linux-personal-autosetup
 git clone https://gitlab.com/Novimatrem/teeth
 git clone https://gitlab.com/Novimatrem/untitled-batch-game-engine-old-abandoned
