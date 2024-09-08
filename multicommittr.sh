@@ -87,6 +87,10 @@ read -p "Is this an old master or new main repo? (main/master) " repoisnewold
 
 echo ""
 echo "GitLab commit..."
+echo ""
+echo "pwd:"
+pwd
+echo ""
 cd /home/$(whoami)
 cd Working
 cd "$reponame"
