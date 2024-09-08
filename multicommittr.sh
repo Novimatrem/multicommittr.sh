@@ -10,6 +10,11 @@ function pause(){
 echo "multicommittr.sh"
 
 echo ""
+echo "Clones GitLab commits to GitHub, and then backs them up to Dropbox."
+echo "Run after every commit."
+echo ""
+
+pause
 
 echo "Starting..."
 
@@ -41,7 +46,9 @@ cd Working
 cd GitLab
 
 # copy changes to github
-cp -a ./$reponame/. ../GitHub/$reponame
+#echo "pwd:"
+#pwd
+
 
 #echo ""
 #echo "GitLab commit..."
@@ -84,13 +91,38 @@ echo ""
 echo "pwd:"
 pwd
 echo ""
+
+cd /home/$(whoami)
+cd Working
+cd GitLab
+cd $reponame
+
+echo "pwd2"
+pwd
+
+cd /home/$(whoami)
+cd Working
+rm -rf GitHub
+
+mkdir GitHub
+cd GitHub
+
+git clone https://github.com/Novimatrem/multicommittr.sh
+
+cd /home/$(whoami)
+cd Working
+
+rsync -av --exclude=".*" GitLab/. GitHub/
+
 cd /home/$(whoami)
 cd Working
 cd GitHub
+
 cd $reponame
 
+
 git add --all
-git commit -m "$commitmsg"
+git commit -m "multicommittr sync"
 git push -u origin $repoisnewold
 
 echo "Done."
