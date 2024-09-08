@@ -19,6 +19,9 @@ echo ""
 cd /home/$(whoami)
 cd Working
 
+clear
+read -p "Which GitLab repo did you just commit to? " reponame
+
 # start downloading all my repos gitlab
 echo "Pulling repos from GitLab..."
 mkdir GitLab
@@ -76,31 +79,34 @@ git clone https://gitlab.com/Novimatrem/dvorak-qwerty-switch-aliases
 git clone https://gitlab.com/Novimatrem/ytdlmp3-command
 git clone https://gitlab.com/Novimatrem/look-at-my-snippets-please
 git clone https://gitlab.com/Novimatrem/multicommittr.sh
+# end downloading all my repos gitlab
 
 echo "Done."
-clear
-read -p "Which repo did you just work on? " reponame
 
-read -p "Which is your commit message? " commitmsg
 
-read -p "Is this an old master or new main repo (GITLAB)? (main/master) " repoisnewold
-
-echo ""
-echo "GitLab commit..."
-echo ""
-echo "pwd:"
-pwd
-echo ""
 cd /home/$(whoami)
 cd Working
 cd GitLab
-cd $reponame
 
-git add --all
-git commit -m "$commitmsg"
-git push -u origin $repoisnewold
+# copy changes to github
+cp -a /$reponame/. ../GitHub/$reponame
 
-echo "Done."
+#echo ""
+#echo "GitLab commit..."
+#echo ""
+#echo "pwd:"
+#pwd
+#echo ""
+#cd /home/$(whoami)
+#cd Working
+#cd GitLab
+#cd $reponame
+
+#git add --all
+#git commit -m "$commitmsg"
+#git push -u origin $repoisnewold
+
+#echo "Done."
 
 
 
@@ -145,6 +151,7 @@ echo "Done."
 #test3
 #test4
 #test5
+#test6
 
 #pwd
 #ls
