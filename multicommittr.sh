@@ -122,7 +122,9 @@ cd $reponame
 
 
 git add --all
-git commit -m "multicommittr sync"
+clear
+read -p "and what was the commit message (identical)? " commitmsg
+git commit -m "$commitmsg"
 git push -u origin $repoisnewold
 
 echo "Done."
