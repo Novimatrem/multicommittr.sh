@@ -89,7 +89,7 @@ cd Working
 cd GitLab
 
 # copy changes to github
-cp -a /$reponame/. ../GitHub/$reponame
+cp -a ./$reponame/. ../GitHub/$reponame
 
 #echo ""
 #echo "GitLab commit..."
