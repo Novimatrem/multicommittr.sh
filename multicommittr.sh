@@ -93,7 +93,8 @@ pwd
 echo ""
 cd /home/$(whoami)
 cd Working
-cd "$reponame"
+cd GitLab
+cd $reponame
 
 git add --all
 git commit -m "$commitmsg"
