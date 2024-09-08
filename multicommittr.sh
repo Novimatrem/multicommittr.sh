@@ -11,7 +11,7 @@ echo "multicommittr.sh"
 
 echo ""
 
-echo "Downloading your existing repos..."
+echo "Downloading your existing repos from GitLab..."
 
 echo ""
 
@@ -19,7 +19,10 @@ echo ""
 cd /home/$(whoami)
 cd Working
 
-# start downloading all my repos
+# start downloading all my repos github
+echo "Pulling repos from GitLab..."
+mkdir GitLab
+cd GitLab
 git clone https://gitlab.com/Novimatrem/znippets
 git clone https://gitlab.com/Novimatrem/zrepos
 git clone https://gitlab.com/Novimatrem/my-awesomewm-mods
@@ -72,6 +75,26 @@ git clone https://gitlab.com/Novimatrem/look-at-my-snippets-please
 
 
 echo "Done."
+
+read -p "Which repo did you just work on? " reponame
+
+read -p "Which is your commit message? " commitmsg
+
+read -p "Is this an old master or new main repo? (main/master)" repoisnewold
+
+echo "GitLab commit..."
+cd /home/$(whoami)
+cd Working
+cd GitLab
+cd $reponame
+
+git add --all
+git commit -m "$commitmsg"
+git push -u origin $repoisnewold
+
+echo "Done."
+
+
 
 pwd
 ls
