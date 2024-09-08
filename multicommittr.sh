@@ -18,7 +18,8 @@ echo ""
 # cd to folder so it's not messy
 cd /home/$(whoami)
 cd Working
-
+rm -rf GitHub
+rm -rf GitLab
 clear
 read -p "Which GitLab repo did you just commit to? " reponame
 
