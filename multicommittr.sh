@@ -19,7 +19,7 @@ echo ""
 cd /home/$(whoami)
 cd Working
 
-# start downloading all my repos github
+# start downloading all my repos gitlab
 echo "Pulling repos from GitLab..."
 mkdir GitLab
 cd GitLab
@@ -83,7 +83,7 @@ read -p "Which repo did you just work on? " reponame
 
 read -p "Which is your commit message? " commitmsg
 
-read -p "Is this an old master or new main repo? (main/master) " repoisnewold
+read -p "Is this an old master or new main repo (GITLAB)? (main/master) " repoisnewold
 
 echo ""
 echo "GitLab commit..."
@@ -101,6 +101,42 @@ git commit -m "$commitmsg"
 git push -u origin $repoisnewold
 
 echo "Done."
+
+
+
+
+
+
+
+# start downloading all my repos github
+echo "Pulling repos from GitHub..."
+mkdir GitHub
+cd GitHub
+git clone https://github.com/Novimatrem/multicommittr.sh
+
+echo "Done."
+clear
+read -p "Is this an old master or new main repo (GITHUB)? (main/master) " repoisnewold
+
+echo ""
+echo "GitHub commit..."
+echo ""
+echo "pwd:"
+pwd
+echo ""
+cd /home/$(whoami)
+cd Working
+cd GitHub
+cd $reponame
+
+git add --all
+git commit -m "$commitmsg"
+git push -u origin $repoisnewold
+
+echo "Done."
+
+
+
 
 #test
 #test2
