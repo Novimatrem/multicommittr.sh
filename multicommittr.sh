@@ -75,18 +75,18 @@ git clone https://gitlab.com/Novimatrem/look-at-my-snippets-please
 
 
 echo "Done."
-
+clear
 read -p "Which repo did you just work on? " reponame
 
 read -p "Which is your commit message? " commitmsg
 
-read -p "Is this an old master or new main repo? (main/master)" repoisnewold
+read -p "Is this an old master or new main repo? (main/master) " repoisnewold
 
+echo ""
 echo "GitLab commit..."
 cd /home/$(whoami)
 cd Working
-cd GitLab
-cd $reponame
+cd "$reponame"
 
 git add --all
 git commit -m "$commitmsg"
@@ -94,10 +94,10 @@ git push -u origin $repoisnewold
 
 echo "Done."
 
+#test
 
-
-pwd
-ls
+#pwd
+#ls
 
 pause
 
