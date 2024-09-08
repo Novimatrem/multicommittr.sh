@@ -103,6 +103,7 @@ git push -u origin $repoisnewold
 echo "Done."
 
 #test
+#test2
 
 #pwd
 #ls
