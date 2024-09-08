@@ -107,6 +107,8 @@ echo "Done."
 
 
 
+cd /home/$(whoami)
+cd Working
 
 # start downloading all my repos github
 echo "Pulling repos from GitHub..."
@@ -142,6 +144,7 @@ echo "Done."
 #test2
 #test3
 #test4
+#test5
 
 #pwd
 #ls
