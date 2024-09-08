@@ -11,7 +11,7 @@ echo "multicommittr.sh"
 
 echo ""
 
-echo "Downloading your existing repos from GitLab..."
+echo "Starting..."
 
 echo ""
 
