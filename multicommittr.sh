@@ -10,7 +10,7 @@ function pause(){
 echo "multicommittr.sh"
 
 echo ""
-echo "Clones GitLab commits to GitHub, and then backs them up to Dropbox."
+echo "Clones GitLab commits to GitHub."
 echo "Run after every commit."
 echo ""
 
@@ -79,7 +79,7 @@ cd Working
 echo "Pulling repos from GitHub..."
 mkdir GitHub
 cd GitHub
-git clone https://github.com/Novimatrem/multicommittr.sh
+git clone https://github.com/Novimatrem/$reponame
 
 echo "Done."
 clear
@@ -107,7 +107,7 @@ rm -rf GitHub
 mkdir GitHub
 cd GitHub
 
-git clone https://github.com/Novimatrem/multicommittr.sh
+git clone https://github.com/Novimatrem/$reponame
 
 cd /home/$(whoami)
 cd Working
