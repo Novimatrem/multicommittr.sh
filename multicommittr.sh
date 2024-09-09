@@ -146,6 +146,11 @@ echo "Done."
 #pwd
 #ls
 
+cd /home/$(whoami)
+cd Working
+rm -rf GitHub
+rm -rf GitLab
+
 pause
 
 # EOF
