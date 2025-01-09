@@ -5,21 +5,19 @@ The script to save my ability to code. Ensures all code and all code changes end
 
 # how to (win10)
 
-Windows usage of the script is unsupported by me, I don't use Windows. It may work, it probably won't. I don't test it on Windows. See LICENSE for details.
+Required dependencies are: Git Bash (https://github.com/git-for-windows/git/releases)
 
-For Windows, the script is only tested on the latest versions of Windows 11 and probably depends on it.
+Note: ensure that prior to this you have already set up inside of Git Bash your:
 
-It should require Windows 11 version 23H2 build 22635.4145 or later.
+```git config --global --edit```
 
-Run the following commands inside of Git Bash in order to download and start the script.
-
-Required dependencies are: Git Bash (https://github.com/git-for-windows/git/releases), and Microsoft's modern 'Windows Terminal' (from the Microsoft Store)
+Do the following with Git Bash:
 
 ```git clone https://github.com/Novimatrem/multicommittr.sh```
 
-```cd multicommittr.sh```
+Using **Windows Explorer** go inside of the ```multicommittr.sh\windows-version``` directory and double click on ```run-win-LTSC-enterprise.bat```
 
-```cmd "/C run-win-LTSC-enterprise.bat"```
+Read the on-screen text carefully.
 
 # how to (linux)
 
