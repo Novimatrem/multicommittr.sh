@@ -16,7 +16,7 @@ echo "Clones GitLab commits to GitHub."
 echo "Run after every commit."
 echo ""
 
-pause
+
 echo ""
 echo "THE WINDOWS VERSION OF MULTICOMMITTR REQUIRES YOU HAVE CYGWIN INSTALLED."
 echo "and"
@@ -192,8 +192,7 @@ echo ""
 git add --all
 echo ""
 clear
-read -p "and what was the commit message (identical)? " commitmsg
-git commit -m "$commitmsg"
+git commit -m "multicommittr sync"
 git push -u origin $repoisnewold
 
 cd ..
@@ -251,12 +250,15 @@ rm -rf GitLab
 clear
 echo "All done, commit clone completed!"
 echo ""
-echo "AFTER YOU HAVE CLOSED this Terminal window, manually delete the folder shown here, the one named terminal-1.18.1462.0 - or Microsoft will sue you. That's all!"
+echo "AFTER YOU HAVE CLOSED this Terminal window, manually delete the folder"
+echo "named terminal-1.18.1462.0 - or else it breaks next commit. That's all!"
 explorer .
 echo ""
 echo "Have a nice day!"
 echo ""
 echo [Process completed]
+pause
+exit
 sleep 999999999999999999999999999s
 sleep 999999999999999999999999999s
 sleep 999999999999999999999999999s
