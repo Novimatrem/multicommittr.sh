@@ -252,7 +252,6 @@ echo "All done, commit clone completed!"
 echo ""
 echo "AFTER YOU HAVE CLOSED this Terminal window, manually delete the folder"
 echo "named terminal-1.18.1462.0 - or else it breaks next commit. That's all!"
-explorer .
 echo ""
 echo "Have a nice day!"
 echo ""
