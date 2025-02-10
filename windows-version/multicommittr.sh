@@ -192,7 +192,8 @@ echo ""
 git add --all
 echo ""
 clear
-git commit -m "multicommittr sync"
+read -p "and what was the commit message (identical)? " commitmsg
+git commit -m "$commitmsg"
 git push -u origin $repoisnewold
 
 cd ..
