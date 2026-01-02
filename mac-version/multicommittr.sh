@@ -32,6 +32,7 @@ echo ""
 pause
 clear
 echo ""
+clear
 echo "Starting..."
 
 echo ""
@@ -254,6 +255,7 @@ rm -rf GitLab
 
 clear
 echo ""
+clear
 echo "All done, commit clone completed!"
 echo ""
 #echo "AFTER YOU HAVE CLOSED this Terminal window, manually delete the folder"
@@ -263,7 +265,6 @@ echo "Have a nice day!"
 echo ""
 echo [Process completed]
 pause
-clear
 exit
 sleep 999999999999999999999999999s
 sleep 999999999999999999999999999s
