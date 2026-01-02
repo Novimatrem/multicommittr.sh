@@ -9,8 +9,9 @@ function pause(){
  read -s -n 1 -p "Press any key to continue . . ."
  echo ""
 }
-
+clear
 echo ""
+clear
 echo "multicommittr.sh MAC"
 
 echo ""
@@ -29,6 +30,7 @@ echo ""
 #echo "MEANING THAT YOU HAVE AN EXE BINARY OF rsync AT C:\cygwin64\bin\rsync"
 #echo ""
 pause
+clear
 echo ""
 echo "Starting..."
 
@@ -52,6 +54,7 @@ rm -rf GitHub
 rm -rf GitLab
 echo ""
 echo ""
+clear
 read -p "Which GitLab repo did you just commit to? " reponame
 
 # start downloading all my repos gitlab
@@ -118,6 +121,7 @@ git clone https://github.com/Novimatrem/$reponame
 echo "Done."
 echo ""
 echo ""
+clear
 read -p "Is this an old master or new main repo (GITHUB)? (main/master) " repoisnewold
 
 echo ""
@@ -248,17 +252,18 @@ cd Working
 rm -rf GitHub
 rm -rf GitLab
 
-
+clear
 echo ""
 echo "All done, commit clone completed!"
 echo ""
-echo "AFTER YOU HAVE CLOSED this Terminal window, manually delete the folder"
-echo "named terminal-1.18.1462.0 - or else it breaks next commit. That's all!"
+#echo "AFTER YOU HAVE CLOSED this Terminal window, manually delete the folder"
+#echo "named terminal-1.18.1462.0 - or else it breaks next commit. That's all!"
 echo ""
 echo "Have a nice day!"
 echo ""
 echo [Process completed]
 pause
+clear
 exit
 sleep 999999999999999999999999999s
 sleep 999999999999999999999999999s
